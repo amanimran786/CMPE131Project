@@ -1,7 +1,8 @@
 public class Main {
+i
     public static void main(String[] args)
     {
-        // NOTE: if you get StackOverflowError then decrease NUM_ITEMS below.
+        // NOTE: If you get StackOverflowError then decrease NUM_ITEMS below.
         final int NUM_ITEMS = 6000;
         QuickSort ob = new QuickSort();
         int[] arr = QuickSort.getAscendingArray(NUM_ITEMS);
@@ -11,7 +12,7 @@ public class Main {
         arr = QuickSort.getRandomArray(NUM_ITEMS);
         long randomTime = ob.sort(arr, 0, NUM_ITEMS - 1);
 
-//printArray(arr); // NOTE: can verify sorted correctly (for small arrays)
+//printArray(arr);// NOTE: can verify sorted correctly (for small arrays).
         arr = QuickSort.getSameArray(NUM_ITEMS);
         long sameTime = ob.sort(arr, 0, NUM_ITEMS - 1);
         System.out.println("QuickSort times using Lomuto (default) partitioning follow:");
